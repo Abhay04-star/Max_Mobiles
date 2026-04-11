@@ -4,18 +4,18 @@
 
       <div class="box">
          <h3>Quick links</h3>
-         <a href="../../projectdone/home.php"> <i class="fas fa-angle-right"></i> Home</a>
-         <a href="../../projectdone/shop category and others/about.php"> <i class="fas fa-angle-right"></i> About</a>
-         <a href="../../projectdone/shop category and others/shop.php"> <i class="fas fa-angle-right"></i> Shop</a>
-         <a href="../../projectdone/shop category and others/contact.php"> <i class="fas fa-angle-right"></i> Contact</a>
+         <a href="/Full-working-e-commerce-website-main/home.php"> <i class="fas fa-angle-right"></i> Home</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/about.php"> <i class="fas fa-angle-right"></i> About</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/shop.php"> <i class="fas fa-angle-right"></i> Shop</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/contact.php"> <i class="fas fa-angle-right"></i> Contact</a>
       </div>
 
       <div class="box">
          <h3>Extra links</h3>
-         <a href="../../projectdone/user login and register/user_login.php"> <i class="fas fa-angle-right"></i> Login</a>
-         <a href="../../projectdone/user login and register/user_register.php"> <i class="fas fa-angle-right"></i> Register</a>
-         <a href="../../projectdone/shop category and others/cart.php"> <i class="fas fa-angle-right"></i> Cart</a>
-         <a href="../../projectdone/shop category and others/orders.php"> <i class="fas fa-angle-right"></i> Orders</a>
+         <a href="/Full-working-e-commerce-website-main/user login and register/user_login.php"> <i class="fas fa-angle-right"></i> Login</a>
+         <a href="/Full-working-e-commerce-website-main/user login and register/user_register.php"> <i class="fas fa-angle-right"></i> Register</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/cart.php"> <i class="fas fa-angle-right"></i> Cart</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/orders.php"> <i class="fas fa-angle-right"></i> Orders</a>
       </div>
 
       <div class="box">

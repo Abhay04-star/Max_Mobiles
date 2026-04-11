@@ -6,6 +6,6 @@ session_start();
 session_unset();
 session_destroy();
 
-header('location:../admin/admin_login.php');
+header('location:/Full-working-e-commerce-website-main/admin/admin_login.php');
 
 ?>

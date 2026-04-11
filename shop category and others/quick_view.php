@@ -1,6 +1,6 @@
 <?php
 
-include '../../projectdone/components/connect.php';
+include '../components/connect.php';
 
 session_start();
 
@@ -10,7 +10,7 @@ if(isset($_SESSION['user_id'])){
    $user_id = '';
 };
 
-include '../../projectdone/components/wishlist_cart.php';
+include '../components/wishlist_cart.php';
 
 ?>
 
@@ -26,7 +26,7 @@ include '../../projectdone/components/wishlist_cart.php';
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../../projectdone/css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
 
    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJYXWB1YNS"></script>
@@ -41,7 +41,7 @@ include '../../projectdone/components/wishlist_cart.php';
 </head>
 <body>
    
-<?php include '../../projectdone/components/user_header.php'; ?>
+<?php include '../components/user_header.php'; ?>
 
 <section class="quick-view">
 
@@ -62,12 +62,12 @@ include '../../projectdone/components/wishlist_cart.php';
       <div class="row">
          <div class="image-container">
             <div class="main-image">
-               <img src="../../projectdone/uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
+               <img src="../uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
             </div>
             <div class="sub-image">
-               <img src="../../projectdone/uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
-               <img src="../../projectdone/uploaded_img/<?= $fetch_product['image_02']; ?>" alt="">
-               <img src="../../projectdone/uploaded_img/<?= $fetch_product['image_03']; ?>" alt="">
+               <img src="../uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
+               <img src="../uploaded_img/<?= $fetch_product['image_02']; ?>" alt="">
+               <img src="../uploaded_img/<?= $fetch_product['image_03']; ?>" alt="">
             </div>
          </div>
          <div class="content">
@@ -105,9 +105,9 @@ include '../../projectdone/components/wishlist_cart.php';
 
 
 
-<?php include '../../projectdone/components/footer.php'; ?>
+<?php include '../components/footer.php'; ?>
 
-<script src="../../projectdone/js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

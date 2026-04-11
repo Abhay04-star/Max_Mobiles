@@ -1,6 +1,6 @@
 <?php
 
-include '../../projectdone/components/connect.php';
+include '../components/connect.php';
 
 session_start();
 
@@ -8,10 +8,10 @@ if(isset($_SESSION['user_id'])){
    $user_id = $_SESSION['user_id'];
 }else{
    $user_id = '';
-   header('location:../../projectdone/user login and register/user_login.php');
+   header('location:/Full-working-e-commerce-website-main/user login and register/user_login.php');
 };
 
-include '../../projectdone/components/wishlist_cart.php';
+include '../components/wishlist_cart.php';
 
 if(isset($_POST['delete'])){
    $wishlist_id = $_POST['wishlist_id'];
@@ -39,7 +39,7 @@ if(isset($_GET['delete_all'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../../projectdone/css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
 
    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJYXWB1YNS"></script>
@@ -54,7 +54,7 @@ if(isset($_GET['delete_all'])){
 </head>
 <body>
    
-<?php include '../../projectdone/components/user_header.php'; ?>
+<?php include '../components/user_header.php'; ?>
 
 <section class="products">
 
@@ -76,8 +76,8 @@ if(isset($_GET['delete_all'])){
       <input type="hidden" name="name" value="<?= $fetch_wishlist['name']; ?>">
       <input type="hidden" name="price" value="<?= $fetch_wishlist['price']; ?>">
       <input type="hidden" name="image" value="<?= $fetch_wishlist['image']; ?>">
-      <a href="../../projectdone/shop category and others/quick_view.php?pid=<?= $fetch_wishlist['pid']; ?>" class="fas fa-eye"></a>
-      <img src="../../projectdone/uploaded_img/<?= $fetch_wishlist['image']; ?>" alt="">
+      <a href="./quick_view.php?pid=<?= $fetch_wishlist['pid']; ?>" class="fas fa-eye"></a>
+      <img src="../uploaded_img/<?= $fetch_wishlist['image']; ?>" alt="">
       <div class="name"><?= $fetch_wishlist['name']; ?></div>
       <div class="flex">
          <div class="price">Rs.<?= $fetch_wishlist['price']; ?>/-</div>
@@ -96,7 +96,7 @@ if(isset($_GET['delete_all'])){
 
    <div class="wishlist-total">
       <p>Grand Total : <span>Rs.<?= $grand_total; ?>/-</span></p>
-      <a href="../../projectdone/shop category and others/shop.php" class="option-btn">Continue Shopping.</a>
+      <a href="/Full-working-e-commerce-website-main/shop category and others/shop.php" class="option-btn">Continue Shopping.</a>
       <a href="wishlist.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from wishlist?');">delete all item</a>
    </div>
 
@@ -114,9 +114,9 @@ if(isset($_GET['delete_all'])){
 
 
 
-<?php include '../../projectdone/components/footer.php'; ?>
+<?php include '../components/footer.php'; ?>
 
-<script src="../../projectdone/js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

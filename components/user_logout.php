@@ -1,11 +1,11 @@
 <?php
 
-include '../../projectdone/components/connect.php';
+include './connect.php';
 
 session_start();
 session_unset();
 session_destroy();
 
-header('location:../home.php');
+header('location:/Full-working-e-commerce-website-main/home.php');
 
 ?>

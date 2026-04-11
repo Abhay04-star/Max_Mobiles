@@ -15,14 +15,14 @@
 
    <section class="flex">
 
-      <a href="../../projectdone/home.php" class="logo">Max<span>Mobiles</span></a>
+      <a href="/Full-working-e-commerce-website-main/home.php" class="logo">Max<span>Mobiles</span></a>
 
       <nav class="navbar">
-         <a href="../../projectdone/home.php">Home</a>
-         <a href="../../projectdone/shop category and others/about.php">About Us</a>
-         <a href="../../projectdone/shop category and others/orders.php">Orders</a>
-         <a href="../../projectdone/shop category and others/shop.php">Shop Now</a>
-         <a href="../../projectdone/shop category and others/contact.php">Contact Us</a>
+         <a href="/Full-working-e-commerce-website-main/home.php">Home</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/about.php">About Us</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/orders.php">Orders</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/shop.php">Shop Now</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/contact.php">Contact Us</a>
       </nav>
 
       <div class="icons">
@@ -36,9 +36,9 @@
             $total_cart_counts = $count_cart_items->rowCount();
          ?>
          <div id="menu-btn" class="fas fa-bars"></div>
-         <a href="../../projectdone/shop category and others/search_page.php"><i class="fas fa-search"></i>Search</a>
-         <a href="../../projectdone/shop category and others/wishlist.php"><i class="fas fa-heart"></i><span>(<?= $total_wishlist_counts; ?>)</span></a>
-         <a href="../../projectdone/shop category and others/cart.php"><i class="fas fa-shopping-cart"></i><span>(<?= $total_cart_counts; ?>)</span></a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/search_page.php"><i class="fas fa-search"></i>Search</a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/wishlist.php"><i class="fas fa-heart"></i><span>(<?= $total_wishlist_counts; ?>)</span></a>
+         <a href="/Full-working-e-commerce-website-main/shop category and others/cart.php"><i class="fas fa-shopping-cart"></i><span>(<?= $total_cart_counts; ?>)</span></a>
          <div id="user-btn" class="fas fa-user"></div>
       </div>
 
@@ -50,19 +50,19 @@
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
          <p><?= $fetch_profile["name"]; ?></p>
-         <a href="../../projectdone/user login and register/update_user.php" class="btn">Update Profile.</a>
+         <a href="/Full-working-e-commerce-website-main/user login and register/update_user.php" class="btn">Update Profile.</a>
          <div class="flex-btn">
-            <a href="../../projectdone/user login and register/user_register.php" class="option-btn">Register.</a>
-            <a href="../../projectdone/user login and register/user_login.php" class="option-btn">Login.</a>
+            <a href="/Full-working-e-commerce-website-main/user login and register/user_register.php" class="option-btn">Register.</a>
+            <a href="/Full-working-e-commerce-website-main/user login and register/user_login.php" class="option-btn">Login.</a>
          </div>
-         <a href="../../projectdone/components/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a> 
+         <a href="/Full-working-e-commerce-website-main/components/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a> 
          <?php
             }else{
          ?>
          <p>Please Login Or Register First to proceed !</p>
          <div class="flex-btn">
-            <a href="../../projectdone/user login and register/user_register.php" class="option-btn">Register</a>
-            <a href="../../projectdone/user login and register/user_login.php" class="option-btn">Login</a>
+            <a href="/Full-working-e-commerce-website-main/user login and register/user_register.php" class="option-btn">Register</a>
+            <a href="/Full-working-e-commerce-website-main/user login and register/user_login.php" class="option-btn">Login</a>
          </div>
          <?php
             }

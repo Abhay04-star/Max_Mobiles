@@ -1,6 +1,6 @@
 <?php
 
-include '../../projectdone/components/connect.php';
+include '../components/connect.php';
 
 session_start();
 
@@ -8,7 +8,7 @@ if(isset($_SESSION['user_id'])){
    $user_id = $_SESSION['user_id'];
 }else{
    $user_id = '';
-   header('location:../../projectdone/user login and register/user_login.php');
+   header('location:/Full-working-e-commerce-website-main/user login and register/user_login.php');
 };
 
 if(isset($_POST['delete'])){
@@ -46,7 +46,7 @@ if(isset($_POST['update_qty'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../../projectdone/css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
 
    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJYXWB1YNS"></script>
@@ -61,7 +61,7 @@ if(isset($_POST['update_qty'])){
 </head>
 <body>
    
-<?php include '../../projectdone/components/user_header.php'; ?>
+<?php include '../components/user_header.php'; ?>
 
 <section class="products shopping-cart">
 
@@ -78,8 +78,8 @@ if(isset($_POST['update_qty'])){
    ?>
    <form action="" method="post" class="box">
       <input type="hidden" name="cart_id" value="<?= $fetch_cart['id']; ?>">
-      <a href="../../projectdone/shop category and others/quick_view.php?pid=<?= $fetch_cart['pid']; ?>" class="fas fa-eye"></a>
-      <img src="../../projectdone/uploaded_img/<?= $fetch_cart['image']; ?>" alt="">
+      <a href="./quick_view.php?pid=<?= $fetch_cart['pid']; ?>" class="fas fa-eye"></a>
+      <img src="../uploaded_img/<?= $fetch_cart['image']; ?>" alt="">
       <div class="name"><?= $fetch_cart['name']; ?></div>
       <div class="flex">
          <div class="price">Rs.<?= $fetch_cart['price']; ?>/-</div>
@@ -100,9 +100,9 @@ if(isset($_POST['update_qty'])){
 
    <div class="cart-total">
       <p>Grand Total : <span>Rs.<?= $grand_total; ?>/-</span></p>
-      <a href="../../projectdone/shop category and others/shop.php" class="option-btn">Continue Shopping.</a>
+      <a href="/Full-working-e-commerce-website-main/shop category and others/shop.php" class="option-btn">Continue Shopping.</a>
       <a href="cart.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');">Delete All Items ?</a>
-      <a href="../../projectdone/shop category and others/checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Proceed to Checkout.</a>
+      <a href="/Full-working-e-commerce-website-main/shop category and others/checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Proceed to Checkout.</a>
    </div>
 
 </section>
@@ -119,9 +119,9 @@ if(isset($_POST['update_qty'])){
 
 
 
-<?php include '../../projectdone/components/footer.php'; ?>
+<?php include '../components/footer.php'; ?>
 
-<script src="../../projectdone/js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

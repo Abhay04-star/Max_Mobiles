@@ -1,6 +1,6 @@
 <?php
 
-include '../../projectdone/components/connect.php';
+include '../components/connect.php';
 
 session_start();
 
@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
 
    if($select_user->rowCount() > 0){
       $_SESSION['user_id'] = $row['id'];
-      header('location:../../projectdone/home.php');
+      header('location:/Full-working-e-commerce-website-main/home.php');
    }else{
       $message[] = 'incorrect username or password!';
    }
@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../../projectdone/css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
 
    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJYXWB1YNS"></script>
@@ -59,7 +59,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
    
-<?php include '../../projectdone/components/user_header.php'; ?>
+<?php include '../components/user_header.php'; ?>
 
 <section class="form-container">
 
@@ -69,7 +69,7 @@ if(isset($_POST['submit'])){
       <input type="password" name="pass" required placeholder="enter your password" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="submit" value="login now" class="btn" name="submit">
       <p>Don't have an account?</p>
-      <a href="../../projectdone/user login and register/user_register.php" class="option-btn">Register Now.</a>
+      <a href="/Full-working-e-commerce-website-main/user login and register/user_register.php" class="option-btn">Register Now.</a>
    </form>
 
 </section>
@@ -86,9 +86,9 @@ if(isset($_POST['submit'])){
 
 
 
-<?php include '../../projectdone/components/footer.php'; ?>
+<?php include '../components/footer.php'; ?>
 
-<script src="../../projectdone/js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

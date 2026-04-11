@@ -3,7 +3,7 @@
 if(isset($_POST['add_to_wishlist'])){
 
    if($user_id == ''){
-      header('location:../../projectdone/user login and register/user_login.php');
+      header('location:/Full-working-e-commerce-website-main/user login and register/user_login.php');
    }else{
 
       $pid = $_POST['pid'];
@@ -38,7 +38,7 @@ if(isset($_POST['add_to_wishlist'])){
 if(isset($_POST['add_to_cart'])){
 
    if($user_id == ''){
-      header('location:../../projectdone/user login and register/user_login.php');
+      header('location:/Full-working-e-commerce-website-main/user login and register/user_login.php');
    }else{
 
       $pid = $_POST['pid'];

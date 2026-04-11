@@ -1,6 +1,6 @@
 <?php
 
-include '../../projectdone/components/connect.php';
+include '../components/connect.php';
 
 session_start();
 
@@ -10,7 +10,7 @@ if(isset($_SESSION['user_id'])){
    $user_id = '';
 };
 
-include '../../projectdone/components/wishlist_cart.php';
+include '../components/wishlist_cart.php';
 
 ?>
 
@@ -26,7 +26,7 @@ include '../../projectdone/components/wishlist_cart.php';
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../../projectdone/css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
 
    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJYXWB1YNS"></script>
@@ -41,7 +41,7 @@ include '../../projectdone/components/wishlist_cart.php';
 </head>
 <body>
    
-<?php include '../../projectdone/components/user_header.php'; ?>
+<?php include '../components/user_header.php'; ?>
 
 <section class="products">
 
@@ -62,8 +62,8 @@ include '../../projectdone/components/wishlist_cart.php';
       <input type="hidden" name="price" value="<?= $fetch_product['price']; ?>">
       <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
       <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
-      <a href="../../projectdone/shop category and others/quick_view.php?pid=<?= $fetch_product['id']; ?>" class="fas fa-eye"></a>
-      <img src="../../projectdone/uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
+      <a href="/Full-working-e-commerce-website-main/shop category and others/quick_view.php?pid=<?= $fetch_product['id']; ?>" class="fas fa-eye"></a>
+      <img src="../uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
       <div class="name"><?= $fetch_product['name']; ?></div>
       <div class="flex">
          <div class="price"><span>Rs.</span><?= $fetch_product['price']; ?><span>/-</span></div>
@@ -94,9 +94,9 @@ include '../../projectdone/components/wishlist_cart.php';
 
 
 
-<?php include '../../projectdone/components/footer.php'; ?>
+<?php include '../components/footer.php'; ?>
 
-<script src="../../projectdone/js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>
